@@ -1,0 +1,13 @@
+.intro {
+    padding-top: 100px;
+    min-height: 100vh;
+}
+
+.navbar-item {
+    color: black;
+}
+
+.app-img {
+    max-height: 800px;
+    max-width: 300px;
+}

@@ -1,0 +1,57 @@
+.movie-app > .movie-list {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}
+
+body {
+    background-color: #141414;
+    color: white;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    max-height: 300px;
+}
+
+.image-container {
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.image-container:hover {
+    transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    transition: 0.5 ease;
+    opacity: 0;
+    bottom: 0;
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.barrio {
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    min-width: 300px;
+}
+
+::-webkit-scrollbar {
+    color: black;
+}
