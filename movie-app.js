@@ -8,7 +8,7 @@ function App() {
 
     //function that calls the api using the input variable as the search.
     const fetchMovies = async (input) => {
-        const url = `http://www.omdbapi.com/?s=${input}&apikey=86194efd`;
+        const url = `https://www.omdbapi.com/?s=${input}&apikey=86194efd`;
         const response = await fetch(url);
         const responseJson = await response.json(); //convert to JSON
 
